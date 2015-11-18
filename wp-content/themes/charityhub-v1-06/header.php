@@ -9,10 +9,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
 	<title><?php bloginfo('name'); ?>  <?php wp_title(); ?></title>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<script src="https://use.typekit.net/gas3kvl.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />	
 	<?php 
 		global $theme_option, $gdlr_post_option;
 		if( !empty($gdlr_post_option) ){ $gdlr_post_option = json_decode($gdlr_post_option, true); }
