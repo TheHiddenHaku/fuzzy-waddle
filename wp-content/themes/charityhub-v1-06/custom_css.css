@@ -2,10 +2,23 @@ iframe {
     display: block;
     background: #000;
     border: none;
-    height: calc(100vh - 30px);
+    height: calc(100vh);
     width: 100%;
-    margin-top: 22px;
 }
+
+blockquote{
+	border: 0 !important;
+}
+
+#baloonPointer {
+    display: block;
+	width: 10px;
+    height: 10px;
+    position: relative;
+    top: 30px;
+    background: url('/wp-content/themes/charityhub-v1-06/images/baloon-pointer.png');
+}
+	
 
 .gdlr-navigation-substitute {
     position: relative;
@@ -34,6 +47,18 @@ iframe {
     margin-bottom: 30px;
 }
 
-#seviziottivo {
+.column-service-icon i {
+    color: #9BBFC0;
+}
+
+#seviziattivo {
 	background: #E9EAEB;
+}
+
+#extra1 .gdlr-styled-box-body, #extra2 .gdlr-styled-box-body, #extra3 .gdlr-styled-box-body {
+	min-height: 410px;
+}
+
+#ifcerviziomentro, #ifcpersonaleintro , #ifcclientiintro {
+	font-size: 1.3em;
 }

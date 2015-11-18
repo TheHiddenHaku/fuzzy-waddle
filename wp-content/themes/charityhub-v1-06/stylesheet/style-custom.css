@@ -7,9 +7,9 @@ h1, h2, h3, h4, h5, h6{ font-family: "LexiaDaMa"; }
 body, input, textarea{ font-family: "LexiaDaMa"; }
 .gdlr-navigation{ font-family: "LexiaDaMa"; }
 .gdlr-slider-item{ font-family: "LexiaDaMa"; }
-body{ font-size: 14px; }
-h1{ font-size: 30px; }
-h2{ font-size: 25px; }
+body{ font-size: 15px; }
+h1{ font-size: 35px; }
+h2{ font-size: 30px; }
 h3{ font-size: 20px; }
 h4{ font-size: 18px; }
 h5{ font-size: 16px; }
@@ -36,11 +36,11 @@ body{ background-color: #ececec; }
 .body-wrapper, .gdlr-single-lightbox-container{ background-color: #ffffff; }.gdlr-button.without-border, input[type="button"], input[type="submit"]{ color: #ffffff; }
 .gdlr-page-title{ color: #ffffff; }
 .gdlr-page-caption{ color: #ffffff; }
-h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #454545; }
-.gdlr-item-title-wrapper{ color: #494949; }
+h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #0e1f29; }
+.gdlr-item-title-wrapper{ color: #0e1f29; }
 .gdlr-item-title-wrapper .gdlr-item-caption{ color: #9b9b9b; }
 body{ color: #808080; }
-a{ color: #50bbf4; }
+a{ color: #9bbfc0; }
 a:hover{ color: #87d9ff; }
 body *{ border-color: #f3f3f3; }
 .page-not-found-block{ background-color: #d65938; }
