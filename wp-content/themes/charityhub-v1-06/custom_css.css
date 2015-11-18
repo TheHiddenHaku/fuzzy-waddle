@@ -1,0 +1,39 @@
+iframe {
+    display: block;
+    background: #000;
+    border: none;
+    height: calc(100vh - 30px);
+    width: 100%;
+    margin-top: 22px;
+}
+
+.gdlr-navigation-substitute {
+    position: relative;
+    z-index: 91;
+    height: 50px;
+}
+
+.gdlr-header-style-2.gdlr-centered .gdlr-logo.gdlr-align-left {
+    float: left;
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 45px;
+}
+
+.gdlr-header-style-2.gdlr-centered .gdlr-header-container {
+    text-align: center;
+    height: 40px;
+}
+
+.section-container, .gdlr-item-start-content, .gdlr-parallax-wrapper, .gdlr-color-wrapper {
+    padding-top: 0;
+}
+
+.gdlr-page-title-wrapper {
+    margin-bottom: 30px;
+}
+
+#seviziottivo {
+	background: #E9EAEB;
+}

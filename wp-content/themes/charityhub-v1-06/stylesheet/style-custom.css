@@ -1,28 +1,26 @@
 html.ltie9 body, body{ min-width: 1140px; } .container{ max-width: 1140px; } .gdlr-caption-wrapper .gdlr-caption-inner{ max-width: 1140px; }
-.body-wrapper.gdlr-boxed-style { max-width: 1110px; }
-.gdlr-logo{ max-width: 2500px; }
-.gdlr-logo{ margin-top: 10px; }
-.gdlr-logo{ margin-bottom: 0px; }
+.body-wrapper.gdlr-boxed-style { max-width: 1200px; }
+.gdlr-logo{ max-width: 60px; }
 .gdlr-logo-right-text{ margin-top: 15px; }
 .gdlr-logo-right-text{ margin-bottom: 50px; }
-h1, h2, h3, h4, h5, h6{ font-family: "Hand Of Sean"; }
-body, input, textarea{ font-family: "Open Sans"; }
-.gdlr-navigation{ font-family: "Open Sans"; }
-.gdlr-slider-item{ font-family: "Open Sans"; }
+h1, h2, h3, h4, h5, h6{ font-family: "LexiaDaMa"; }
+body, input, textarea{ font-family: "LexiaDaMa"; }
+.gdlr-navigation{ font-family: "LexiaDaMa"; }
+.gdlr-slider-item{ font-family: "LexiaDaMa"; }
 body{ font-size: 14px; }
-h1{ font-size: 21px; }
-h2{ font-size: 26px; }
+h1{ font-size: 30px; }
+h2{ font-size: 25px; }
 h3{ font-size: 20px; }
-h4{ font-size: 16px; }
+h4{ font-size: 18px; }
 h5{ font-size: 16px; }
 h6{ font-size: 15px; }
 .top-navigation-wrapper, .gdlr-logo-right-text{ color: #ffffff; }
 .top-navigation-wrapper a, .gdlr-logo-right-text a{ color: #ffffff; }
-.top-navigation-wrapper a:hover, .gdlr-logo-right-text a:hover{ color: #62cdff; }
-.gdlr-header-wrapper{ background-color: #ffffff; }
+.top-navigation-wrapper a:hover, .gdlr-logo-right-text a:hover{ color: #B2E6FF; }
+.gdlr-header-wrapper{ background-color: #0e1f29; }
 .gdlr-main-menu > li > a{ color: #ffffff; }
 .gdlr-main-menu > li:hover > a, .gdlr-main-menu > li.current-menu-item > a, .gdlr-main-menu > li.current-menu-ancestor > a{ color: #b7b7b7; }
-.gdlr-navigation, .gdlr-navigation-wrapper.gdlr-fixed-menu{ background-color: #575757; }
+.gdlr-navigation, .gdlr-navigation-wrapper.gdlr-fixed-menu{ background-color: #0e1f29; }
 .gdlr-main-menu > li:hover > a, .gdlr-main-menu > li.current-menu-item > a, .gdlr-main-menu > li.current-menu-ancestor > a{ background-color: #474747; }#gdlr-main-navigation, .gdlr-header-style-2.gdlr-centered .gdlr-navigation-wrapper.gdlr-fixed-menu{ border-bottom-color: #474747; }
 .gdlr-main-menu > .gdlr-normal-menu .sub-menu, .gdlr-main-menu > .gdlr-mega-menu .sf-mega{ border-top-color: #444444; }
 .gdlr-main-menu > .gdlr-normal-menu li , .gdlr-main-menu > .gdlr-mega-menu .sf-mega{ background-color: #444444; }
@@ -36,14 +34,14 @@ h6{ font-size: 15px; }
 #gdlr-responsive-navigation.dl-menuwrapper button:hover, #gdlr-responsive-navigation.dl-menuwrapper button.dl-active, #gdlr-responsive-navigation.dl-menuwrapper ul{ background-color: #1e1e1e; }
 body{ background-color: #ececec; }
 .body-wrapper, .gdlr-single-lightbox-container{ background-color: #ffffff; }.gdlr-button.without-border, input[type="button"], input[type="submit"]{ color: #ffffff; }
-.gdlr-page-title{ color: #000000; }
-.gdlr-page-caption{ color: #353535; }
-h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #000000; }
+.gdlr-page-title{ color: #ffffff; }
+.gdlr-page-caption{ color: #ffffff; }
+h1, h2, h3, h4, h5, h6, .gdlr-title, .gdlr-title a{ color: #454545; }
 .gdlr-item-title-wrapper{ color: #494949; }
 .gdlr-item-title-wrapper .gdlr-item-caption{ color: #9b9b9b; }
 body{ color: #808080; }
-a{ color: #62cdff; }
-a:hover{ color: #62cdff; }
+a{ color: #50bbf4; }
+a:hover{ color: #87d9ff; }
 body *{ border-color: #f3f3f3; }
 .page-not-found-block{ background-color: #d65938; }
 .page-not-found-block{ color: #ffffff; }
@@ -175,19 +173,19 @@ body .nivo-directionNav a, body .flex-direction-nav a, body .flex-direction-nav 
 .gdlr-post-slider-item .gdlr-donate-button{ color: #ffffff; }
 input[type="text"], input[type="email"], input[type="password"], textarea{ background-color: #f7f7f7; }
 input[type="text"], input[type="email"], input[type="password"], textarea{ color: #b5b5b5; }input::input-placeholder{ color:#b5b5b5; } input::-webkit-input-placeholder{ color:#b5b5b5; }input::-moz-placeholder{ color:#b5b5b5; } input:-moz-placeholder{ color:#b5b5b5; }input:-ms-input-placeholder{ color:#b5b5b5; }textarea::input-placeholder{ color:#b5b5b5; } textarea::-webkit-input-placeholder{ color:#b5b5b5; }textarea::-moz-placeholder{ color:#b5b5b5; } textarea:-moz-placeholder{ color:#b5b5b5; }textarea:-ms-input-placeholder{ color:#b5b5b5; }
-.footer-wrapper{ background-color: #000000; }
-.footer-wrapper .gdlr-widget-title, .footer-wrapper .gdlr-widget-title a{ color: #ffffff; }
-.footer-wrapper{ color: #ffffff; }
+.footer-wrapper{ background-color: #0e1f29; }
+.footer-wrapper .gdlr-widget-title, .footer-wrapper .gdlr-widget-title a{ color: #dddddd; }
+.footer-wrapper{ color: #919191; }
 .footer-wrapper a{ color: #d6d6d6; }
 .footer-wrapper a:hover{ color: #969696; }
-.footer-wrapper *{ border-color: #000000; }
+.footer-wrapper *{ border-color: #363636; }
 .footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ background-color: #383838; }
 .footer-wrapper input[type="text"], .footer-wrapper input[type="email"], .footer-wrapper input[type="password"], .footer-wrapper textarea{ color: #aaaaaa; }
 .footer-wrapper .tagcloud a{ background-color: #62cdff; }
 .footer-wrapper .tagcloud a, .footer-wrapper .tagcloud a:hover{ color: #ffffff; }
-.copyright-wrapper{ background-color: #111111; }
+.copyright-wrapper{ background-color: #0e1f29; }
 .copyright-wrapper{ color: #919191; }
-.footer-wrapper .copyright-wrapper{ border-color: #111111; }
+.footer-wrapper .copyright-wrapper{ border-color: #0e1f29; }
 html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce-message,html .woocommerce div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active {  background: #62cdff; }html .woocommerce .star-rating, html .woocommerce-page .star-rating, html .woocommerce .star-rating:before, html .woocommerce-page .star-rating:before, html .woocommerce div.product span.price, html .woocommerce div.product p.price, html .woocommerce #content div.product span.price, html .woocommerce #content div.product p.price, html .woocommerce-page div.product span.price, html .woocommerce-page div.product p.price, html .woocommerce-page #content div.product span.price, html .woocommerce-page #content div.product p.price {color: #62cdff; }
 html .woocommerce-message  a.button, html .woocommerce-error  a.button, html .woocommerce-info  a.button, html .woocommerce-info a.showcoupon, html .woocommerce-message, html .woocommerce-error, html .woocommerce-info, html  .woocommerce span.onsale, html  .woocommerce-page span.onsale, html .woocommerce div.product .woocommerce-tabs ul.tabs li.active,html .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active, html .woocommerce nav.woocommerce-pagination ul li span.current, html .woocommerce-page nav.woocommerce-pagination ul li span.current, html .woocommercenav.woocommerce-pagination ul li a:hover, html .woocommerce-page nav.woocommerce-pagination ul li a:hover{ color: #ffffff; }
 html .woocommerce-info{ background: #389EC5; }
@@ -253,62 +251,8 @@ html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,
 .gdlr-skin-urgent-cause .gdlr-item-title-gimmick{ background-color: #ffffff; }
 .gdlr-skin-urgent-cause *, .gdlr-skin-urgent-cause .gdlr-skin-border{ border-color: #ffffff; }
 .gdlr-skin-urgent-cause .gdlr-button, .gdlr-skin-urgent-cause .gdlr-button:hover, .gdlr-skin-urgent-cause input[type="button"], .gdlr-skin-urgent-cause input[type="submit"]{ color: #ffffff; background-color: #62cdff;  }@font-face {
-font-family: "Hand Of Sean";
-src: url("http://www.lorizzontedilorenzo.com/wp-content/uploads/2015/08/handofsean.eot");
-src: url("http://www.lorizzontedilorenzo.com/wp-content/uploads/2015/08/handofsean.eot?#iefix") format("embedded-opentype"), 
-url("http://www.lorizzontedilorenzo.com/wp-content/uploads/2015/08/handofsean.ttf") format("truetype");
-}
-.gdlr-navigation-wrapper .gdlr-main-menu > li > a {
-    padding: 23px 14px;
-}
-
-.sf-menu > li > a {
-    font-size: 10px;
-}
-.gdlr-navigation-substitute {
-    height: 0px;
-}
-
-}
-.gdlr-page-title-wrapper .gdlr-page-title { color: #FFFFFF; }
-
-.section-container, .gdlr-item-start-content, .gdlr-parallax-wrapper, .gdlr-color-wrapper {
-    padding-top: 30px;
-}
-
-h1.h1-sidebar{
-    margin-top: 8px;
-}
-
-.gdlr-page-title-wrapper .gdlr-page-title {
-    text-trasform: uppercase;
-    margin-left: 50px;
-}
-
-.gdlr-navigation-substitute {
-    height: 0px;
-    top: -32px;
-    z-index: 200;
-}
-
-.gdlr-page-title-wrapper .gdlr-page-title {
-  text-trasform: uppercase;
-}
-
-.gdlr-page-title-wrapper {
-background-repeart: no-repeat;
-}
-
-/*CAUSES*/
-.gdlr-donate-button {
-visibility: hidden;
-}
-
-.single-cause .cause-info.cause-pdf {
-    margin-top: -29px;
-}
-
-.causeWidgetLink{
-    font-family: "Hand of Sean";
-    font-size: 1.2em;
+font-family: "LexiaDaMa";
+src: url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.eot");
+src: url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.eot?#iefix") format("embedded-opentype"), 
+url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.ttf") format("truetype");
 }
