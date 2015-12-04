@@ -51,6 +51,10 @@ blockquote{
     pointer-events: none;
 }
 
+.gdlr-page-title-wrapper {
+    background-color: #9DC6CD;
+}
+
 .column-service-icon i {
     color: #9BBFC0;
 }
