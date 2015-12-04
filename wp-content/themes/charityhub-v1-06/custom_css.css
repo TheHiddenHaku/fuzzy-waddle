@@ -47,6 +47,10 @@ blockquote{
     margin-bottom: 30px;
 }
 
+.gdlr-header-inner {
+    pointer-events: none;
+}
+
 .column-service-icon i {
     color: #9BBFC0;
 }
