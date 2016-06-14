@@ -6,7 +6,7 @@
 	$header_background = '';
 	if( !empty($gdlr_post_option['header-background']) ){
 		if( is_numeric($gdlr_post_option['header-background']) ){
-			$image_src = wp_get_attachment_image_src($gdlr_post_option['header-background'], 'full');	
+			$image_src = wp_get_attachment_image_src($gdlr_post_option['header-background'], 'full');
 			$header_background = ' style="background-image: url(\'' . $image_src[0] . '\');  background-repeat: no-repeat; margin-top: 23px; background-size: 1110px;" ';
 		}else{
 			$header_background = ' style="background-image: url(\'' . $gdlr_post_option['header-background'] . '\'); background-repeat: no-repeat; margin-top: 23px; background-size: 1110px;" ';
@@ -23,11 +23,15 @@
 					<?php if( !empty($gdlr_post_option['page-caption']) ){ ?>
 					<span class="gdlr-page-caption"><?php echo gdlr_text_filter($gdlr_post_option['page-caption']); ?></span>
 					<?php } ?>
-				</div>	
-			</div>	
-		</div>	
-	<?php }else if( is_single() && ($post->post_type == 'post' || $post->post_type == 'cause') ){ 
-		
+
+				</div>
+				<!-- <div class="gdlr-page-mobile-background" <?php echo $header_background; ?> >
+					&nbsp;
+				</div> -->
+			</div>
+		</div>
+	<?php }else if( is_single() && ($post->post_type == 'post' || $post->post_type == 'cause') ){
+
 		if( $post->post_type == 'cause' ){
 			$page_title = get_the_title();
 			$page_caption = $gdlr_post_option['page-caption'];
@@ -37,7 +41,7 @@
 		}else{
 			$page_title = $theme_option['post-title'];
 			$page_caption = $theme_option['post-caption'];
-		} 
+		}
 	?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?> >
 			<div class="gdlr-page-title-container container" >
@@ -46,16 +50,16 @@
 					<?php if( !empty($page_caption) ){ ?>
 					<span class="gdlr-page-caption"><?php echo gdlr_text_filter($page_caption); ?></span>
 					<?php } ?>
-				</div>	
-			</div>	
-		</div>	
+				</div>
+			</div>
+		</div>
 	<?php }else if( is_single() ){ // for custom post type
-		
+
 		$page_title = get_the_title();
 		if( !empty($gdlr_post_option) && !empty($gdlr_post_option['page-caption']) ){
 			$page_caption = $gdlr_post_option['page-caption'];
 		}else if($post->post_type == 'portfolio' && !empty($theme_option['portfolio-caption']) ){
-			$page_caption = $theme_option['portfolio-caption'];		
+			$page_caption = $theme_option['portfolio-caption'];
 		}
 	?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?>  >
@@ -65,18 +69,18 @@
 					<?php if( !empty($page_caption) ){ ?>
 					<span class="gdlr-page-caption"><?php echo gdlr_text_filter($page_caption); ?></span>
 					<?php } ?>
-				</div>	
-			</div>	
-		</div>	
+				</div>
+			</div>
+		</div>
 	<?php }else if( is_404() ){ ?>
 		<div class="gdlr-page-title-wrapper" <?php echo $header_background; ?>  >
 			<div class="gdlr-page-title-container container" >
 				<div class="gdlr-page-title-inner" >
 					<h1 class="gdlr-page-title"><?php _e('404', 'gdlr_translate'); ?></h1>
 					<span class="gdlr-page-caption"><?php _e('Page not found', 'gdlr_translate'); ?></span>
-				</div>	
-			</div>	
-		</div>		
+				</div>
+			</div>
+		</div>
 	<?php }else if( is_archive() || is_search() ){
 		if( is_search() ){
 			$title = __('Search Results', 'gdlr_translate');
@@ -98,10 +102,10 @@
 			$caption = get_the_date('Y');
 		}else if( is_author() ){
 			$title = __('By','gdlr_translate');
-			
+
 			$author_id = get_query_var('author');
 			$author = get_user_by('id', $author_id);
-			$caption = $author->display_name;					
+			$caption = $author->display_name;
 		}else if( is_post_type_archive('product') ){
 			$title = __('Shop', 'gdlr_translate');
 			$caption = '';
@@ -117,8 +121,8 @@
 					<?php if( !empty($caption) ){ ?>
 					<h1 class="gdlr-page-caption"><?php echo gdlr_text_filter($caption); ?></h1>
 					<?php } ?>
-				</div>	
-			</div>	
-		</div>		
+				</div>
+			</div>
+		</div>
 	<?php } ?>
 	<!-- is search -->

@@ -1,0 +1,1027 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900) ;
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      body {
+        color: #ffffff;
+        font-family: 'Lato';
+        font-weight: 100;
+        font-size: 16px;
+        margin: 0 auto;
+      }
+
+
+      a {
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      p {
+        max-width: 800px;
+      }
+
+      p.small,
+      pre {
+        font-size: 70%;
+      }
+
+      section {
+        position: relative;
+        overflow: hidden;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        background-color: #05558C;
+        right: 0;
+      }
+
+      .panels,
+      .log,
+      .menu,
+      pre {
+        position: absolute;
+        top: 200px;
+        bottom: 50px;
+        right: 50px;
+        left: 400px;
+        overflow: scroll;
+      }
+
+      .log,
+      .menu {
+        right: auto;
+        left: 50px;
+        width: 300px;
+      }
+
+      pre {
+        left: 50px;
+        padding: 50px;
+      }
+
+      .menu a {
+        display: block;
+        width: 100%;
+        padding: 25px;
+        background: #f1c40f;
+        text-decoration: none;
+        margin: 0 0 25px 0;
+      }
+
+      .menu a.active,
+      .menu a:active,
+      .menu a:hover {
+        background: #f39c12;
+      }
+      
+      section.blocked{
+      	right: 600px;
+      }
+      
+      body.blocked{
+      	overflow: hidden;
+      }
+      
+      .testo{
+      	position: absolute;
+      	z-index: 9999;
+      }
+      
+      .testo:hover{
+      	cursor: pointer;
+      }
+      
+      .testo h2:after{
+      	content: '';
+      	width: 40px;
+      	height: 40px;
+      	display: inline-block;
+      	background-image: url('../img/more.png');
+      	-webkit-transition: all 0.3s ease;
+      	-moz-transition: all 0.3s ease;
+      	transition: all 0.3s ease;
+      	opacity: 1;
+      }
+      
+      .testo:hover h2:after{
+      	opacity: 1;
+      	transform:rotate(360deg);
+      	-ms-transform:rotate(360deg); /* IE 9 */
+      	-webkit-transform:rotate(360deg); /* Safari and Chrome */
+      }
+      
+      #credits{
+      	width: 100%;
+      	position: absolute;
+      	bottom: 20px;
+      	left: 0;
+      	color: #fff;
+      	font-size: 0.95em;
+      	text-align: center;
+      }
+      
+      #credits a{
+      	margin-right: 10px;
+      }
+      #credits a:hover{
+      	text-decoration: none;
+      }
+      
+      /*approfondimento*/
+      .approfondimento{
+      	position: fixed;
+      	width: 600px;
+        	height: 100%;
+        	top: 0;
+        	z-index: 1000;
+        	right: -600px;
+        	box-sizing: border-box;
+        	padding: 40px;
+        	font-weight: 300;
+        	background-color: #ffffff;
+        	color: #222222;
+      }
+      
+      .approfondimento.visible{
+      	right: 0;
+      	overflow: auto;
+      }
+      
+      .approfondimento h2{
+      	font-weight: 700;
+      	font-size: 2em;
+      }
+      
+      .approfondimento p{
+      	font-size: 1em;
+      	line-height: 1.7em;
+      }
+      
+      .approfondimento .close{
+      	display: block;
+      	width:40px;
+      	height: 40px;
+      	background:url("../img/close.png");
+      	cursor: pointer;
+      	-webkit-transition: all 0.3s ease;
+      	-moz-transition: all 0.3s ease;
+      	transition: all 0.3s ease;
+      	opacity: 0.5;
+      }
+      
+      .approfondimento .close:hover{
+      	opacity: 1;
+      	transform:rotate(360deg);
+      	-ms-transform:rotate(360deg); /* IE 9 */
+      	-webkit-transform:rotate(360deg); /* Safari and Chrome */
+      }
+      
+      /* Overlay */
+      #overlay{
+      	width:100%;
+      	height: 100%;
+      	position: fixed;
+      	z-index: -1;
+      }
+      
+      #overlay.active{
+      	z-index: 1000;
+      }
+      
+      /* Transitions */
+       
+      section, .approfondimento {
+          -webkit-transition: right 0.3s ease;
+          -moz-transition: right 0.3s ease;
+          transition: right 0.3s ease;
+      }
+      
+      /*INTRODUCTION*/
+      section#introduction{
+      	padding: 0;
+      	z-index: 200;
+      }
+      section#introduction h1{
+      	font-size: 1.2em;
+      }
+      section#introduction h1 a{
+      	text-decoration: none;
+      	position: absolute;
+      	display: block;
+      	margin: 0;
+      	padding: 0;
+      	width: 100%;
+      	text-align: center;
+      	color: #032740;
+      	background-image: url('../img/arrow.png');
+      	background-repeat: no-repeat;
+      	background-position: center bottom;
+      	padding-bottom: 50px;
+      	font-weight:300;
+      	top: 100%;
+      	margin-top: -90px;
+      	cursor: pointer;
+      }
+      
+      section#introduction .container{
+      	text-align: center;
+      	margin: 0 auto;
+      	display: block;
+      	position: absolute;
+      	top: 50%;
+      	margin-top: -150px;
+      	width: 100%;
+      	padding: 0;
+      }
+      
+      section#introduction .container img{
+      	position: relative;
+      	width: 200px;
+      	height: 200px;
+      }
+      
+      /*COMUNICAZIONE*/
+      section#comunicazione{
+      	background-color: #FF872D;
+      	background-image: url("../img/comunicazione/fondo.png");
+      	background-repeat: no-repeat;
+      	background-position: center center;
+      }
+      
+      .item{
+      	height: 550px;
+      	display: block;
+      	position: absolute;
+      	top: 50%;
+      	left: 50%;
+      	margin-top: -250px;
+      	background-repeat: no-repeat;
+      	background-position: center bottom;
+      	background-size: 100% auto;
+      	visibility: hidden;
+      }
+      
+      #tastiera{
+      	margin-left: -660px;
+      	width: 260px;
+      	background-image: url("../img/comunicazione/tastiera.png");
+      	visibility: visible!important;
+      }
+      
+      #computer{
+      	width: 546px;
+      	margin-left: -390px;
+      	background-image: url("../img/comunicazione/computer.png");	
+      	visibility: visible!important;
+      }
+      
+      #libro{
+      	margin-left: 90px;
+      	width: 343px;
+      	background-image: url("../img/comunicazione/libro.png");
+      	visibility: visible!important;
+      }
+      
+      #cellulare{
+      	margin-left: 190px;
+      	width: 54px;
+      	background-image: url("../img/comunicazione/cellulare.png");
+      	background-position:center 180px;
+      	visibility: visible!important;
+      }
+      
+      #fiore{
+      	margin-left: -580px;
+      	width: 142px;
+      	background-image: url("../img/comunicazione/fiore.png");
+      	background-position:center 120px;
+      	visibility: visible!important;
+      }
+      
+      #facebook{
+      	margin-left: 80px;
+      	width: 140px;
+      	background-image: url("../img/comunicazione/facebook.png");
+      	background-position:center 0px;
+      }
+      
+      #twitter{
+      	margin-left: 225px;
+      	width: 140px;
+      	background-image: url("../img/comunicazione/twitter.png");
+      	background-position:center 160px;
+      }
+      
+      #text{
+      	margin-left: 140px;
+      	width: 140px;
+      	background-image: url("../img/comunicazione/text.png");
+      }
+      
+      #bolli{
+      	margin-left:450px;
+      	width: 232px;
+      }
+            
+      #bolli ul{
+     	margin:0;
+      	padding:0;
+      }
+      
+     #bolli ul li{
+      	width: 98px;
+      	height: 90px;
+      	background-image: url("../img/comunicazione/facebook_man.png");	
+      	background-size: 100%;
+      	float: left;
+      	margin: 9px;
+      	list-style:none;
+      }
+      
+       #bolli ul li.twitter{
+       background-image: url("../img/comunicazione/twitter_man.png");	
+       }
+       
+       #bolli ul li.altro{
+       background-image: url("../img/comunicazione/text_man.png");	
+       }
+      
+      /*FINE COMUNICAZIONE*/
+      
+      /*Ricerca per il fundraising*/
+      #ricerca{
+      	background-color: #05558C;
+      	background-image: url("../img/ricerca/fondo.png");
+      	background-repeat: no-repeat;
+      	background-position: 50% 50%;
+      }
+      
+      #ricerca .item{
+      	height: 650px;
+      	margin-top: -325px;
+      }
+     
+     #ricerca .moneta{
+     	background-image: url("../img/ricerca/moneta_3.png");
+     	width: 150px;
+     	height: 150px;
+     	margin-left:-500px;
+     	z-index: 0;
+     }
+     
+     #ricerca .moneta#moneta1{
+     	margin-top:200px;
+     }
+     #ricerca .moneta#moneta2{
+     	margin-top:185px;
+     }
+     #ricerca .moneta#moneta3{
+     	margin-top:170px;
+     	margin-left:-490px;
+     }
+     #ricerca .moneta#moneta4{
+     	margin-top:155px;
+     	margin-left:-510px;
+     }
+     #ricerca .moneta#moneta5{
+     	margin-top:140px;
+     	margin-left:-505px;
+     }
+     #ricerca .moneta#moneta6{
+     	margin-top:125px;
+     	margin-left:-495px;
+     }
+     #ricerca .moneta#moneta7{
+     	margin-top:110px;
+     	margin-left:-515px;
+     }
+     #ricerca .moneta#moneta8{
+     	margin-top:95px;
+     }
+      
+      #ricerca #carta_uno{
+      	background-image: url("../img/ricerca/carta_1.png");
+      	width: 130px;
+      	background-position:center top;
+      	margin-left:320px;
+      	z-index: 0;
+      }
+      #ricerca #carta_due{
+      	background-image: url("../img/ricerca/carta_2.png");
+      	width: 130px;
+      	background-position:center 208px;
+      	margin-left:-20px;
+      	z-index: 1;
+      }
+      #ricerca #carta_tre{
+      	background-image: url("../img/ricerca/carta_3.png");
+      	width: 130px;
+      	background-position:center 200px;
+      	margin-left:320px;
+      	z-index: 1;
+      }
+      #ricerca #carta_quattro{
+      	background-image: url("../img/ricerca/carta_4.png");
+      	width: 130px;
+      	background-position:center 230px;
+      	margin-left:465px;
+      	z-index: 1;
+      }
+      #ricerca #carta_cinque{
+      	background-image: url("../img/ricerca/carta_5.png");
+      	width: 130px;
+      	background-position:center 414px;
+      	margin-left:-316px;
+      	z-index: 1;
+      }
+      #ricerca #carta_sei{
+      	background-image: url("../img/ricerca/carta_6.png");
+      	width: 150px;
+      	background-position:center 414px;
+      	margin-left:-40px;
+      	z-index: 1;
+      }
+      #ricerca #carta_sette{
+      	background-image: url("../img/ricerca/carta_7.png");
+      	width: 150px;
+      	background-position:center 384px;
+      	margin-left:408px;
+      	z-index: 1;
+      }
+      #ricerca #carta_otto{
+      	background-image: url("../img/ricerca/carta_coperta_2.png");
+      	width: 162px;
+      	background-position:center top;
+      	margin-left:408px;
+      	z-index: 1;
+      }
+      #ricerca #carta_nove{
+      	background-image: url("../img/ricerca/carta_coperta.png");
+      	width: 130px;
+      	background-position:center 208px;
+      	margin-left:-185px;
+      	z-index: 0;
+      }
+      #ricerca #carta_dieci{
+      	background-image: url("../img/ricerca/carta_coperta.png");
+      	width: 130px;
+      	background-position:center 390px;
+      	margin-left:290px;
+      	z-index: 1;
+      }
+      
+      #ricerca #uomo{
+      	background-image: url("../img/ricerca/uomo.png");
+      	width: 264px;
+      	background-position:center 90px;
+      	margin-left:74px;
+      	z-index: 1;
+      }
+      #ricerca #azienda{
+      	background-image: url("../img/ricerca/azienda.png");
+      	width: 264px;
+      	background-position:center 296px;
+      	margin-left:-264px;
+      	z-index: 1;
+      }
+      /*Fine Ricerca per il fundraising*/
+      
+      /*Raccolta fondi*/
+      #raccolta{
+      	background-color: #3399CC;
+      	background-repeat: no-repeat;
+      	background-position: 50% 50%;
+      }
+      
+      #raccolta .item{
+      	height: 580px;
+      	margin-top: -290px;
+      }
+      
+      #raccolta #azienda_bkg{
+      	background-image: url("../img/raccolta/fabbrica.png");
+      	width: 100%;
+      	height: 100%;
+      	margin-top: -25%;
+      	margin-left:-50%;
+      	background-position: 10% top;
+      	z-index: 0;
+      	background-size: auto;
+
+      }
+      #raccolta #azienda{
+      	background-image: url("../img/raccolta/azienda.png");
+      	width: 484px;
+      	margin-left:-640px;
+      	z-index: 1;
+      }
+      #raccolta #privato_bkg{
+      	background-image: url("../img/raccolta/pirellone.png");
+      	width: 100%;
+      	height: 100%;
+      	margin-top: -25%;
+      	margin-left:-50%;
+      	background-position: 50% top;
+      	z-index: 0;
+      	background-size: auto;
+
+      }
+      #raccolta #privato{
+      	background-image: url("../img/raccolta/privato.png");
+      	width: 420px;
+      	margin-left:-210px;
+      	z-index: 2;
+      }
+      #raccolta #istituzione_bkg{
+      	background-image: url("../img/raccolta/comune.png");
+      	width: 100%;
+      	height: 100%;
+      	margin-top: -25%;
+      	margin-left:-50%;
+      	background-position: 90% top;
+      	z-index: 0;
+      	background-size: auto;
+      }
+      #raccolta #istituzione{
+      	background-image: url("../img/raccolta/istituzione.png");
+      	width: 460px;
+      	margin-left:160px;
+      	z-index: 1;
+      }
+      .item.nuvole{
+      	background-size: auto;
+      	height: 96px;
+      	width: 100%; 
+      	margin-left: -50%;
+      	background-image: url("../img/raccolta/nuvole1.png");
+      	background-repeat: repeat-x;
+      	visibility: visible !important;
+      	
+      	animation-name: nuvoleanim;
+      	-webkit-animation-name: nuvoleanim;
+      
+      	animation-duration: 100s;	
+      	-webkit-animation-duration: 100s;
+      
+      	animation-iteration-count: infinite;
+      	-webkit-animation-iteration-count: infinite;
+      	
+      	animation-timing-function:linear;
+      	-webkit-animation-timing-function:linear;
+      }
+      
+      @keyframes nuvoleanim {
+      	0% {
+      		background-position: -1020px 10%;	
+      	}	
+      	100% {
+      		background-position: 1900px 10%;	
+      	}			
+      }
+      
+      @-webkit-keyframes nuvoleanim {
+      	0% {
+      		background-position: -1020px 10%;	
+      	}	
+      	100% {
+      		background-position: 1900px 10%;	
+      	}				
+      }
+      
+      #raccolta .item.nuvole{
+      	height: 96px;
+      }
+      
+      #raccolta .item.nuvole#nuvole_due{
+      	background-image: url("../img/raccolta/nuvole2.png");
+      	
+      	animation-duration:80s;	
+      	-webkit-animation-duration: 80s;
+      }
+      /*Fine Raccolta fondi*/
+      
+      /*Aziende per bene*/
+      section#aziende_per_bene{
+      	background-color: #FF872D;
+      	background-image: url("../img/aziende_per_bene/fondo.png");
+      	background-repeat: no-repeat;
+      	background-position: center bottom;
+      }
+      
+      #aziende_per_bene #mano{
+      	background-image: url("../img/aziende_per_bene/mano.png");
+      	height: 800px;
+      	margin-top: -400px;
+      	margin-left: -400px;
+      	width: 1360px;
+      	z-index: 2;
+      }	
+           
+      #aziende_per_bene #arcobaleno{
+      	background-image: url("../img/aziende_per_bene/arcobaleno.png");
+      	height: 450px;
+      	width: 450px;
+      	margin-top: -386px;
+      	margin-left: -302px;
+      	z-index: 1;
+      }	
+            
+      #aziende_per_bene .item.nuvole#nuvole_uno{
+      	background-image: url("../img/aziende_per_bene/nuvole1.png");
+      	z-index: 0;
+      	}
+      
+      #aziende_per_bene .item.nuvole#nuvole_due{
+      	background-image: url("../img/aziende_per_bene/nuvole2.png");
+      	z-index: 0;
+      	}
+      
+      /*Fine Aziende per bene*/
+      
+      /*Internazionalizzazione*/
+      section#internazionalizzazione{
+      	background-color: #05558C;
+      	background-image: url("../img/internazionalizzazione/fondo.png");
+      	background-repeat: no-repeat;
+      	background-position: center center;
+      }
+      #internazionalizzazione .item{
+      	height: 700px;
+      	margin-top: -350px;
+      }
+      #internazionalizzazione #mappa{
+      	background-image: url("../img/internazionalizzazione/mappa.png");
+      	width: 670px;
+      	margin-left:-600px;
+      	z-index: 1;
+      	visibility:visible !important;
+      }
+      #internazionalizzazione .puntina{
+      	background-image: url("../img/internazionalizzazione/puntina.png");
+      	width: 30px;
+      	height: 60px;
+      	margin-left:-482px;
+      	margin-top: 10px;
+      	z-index: 2;
+      }
+      
+      #internazionalizzazione .puntina#puntina_due{
+      	margin-left:-188px;
+      	margin-top: 0px;
+      }
+      
+      #internazionalizzazione #lente{
+      	background-image: url("../img/internazionalizzazione/lente.png");
+      	width: 160px;
+      	margin-left:-520px;
+      	z-index: 2;
+      	background-position: center 480px;
+      }
+      #internazionalizzazione #mappamondo{
+      	background-image: url("../img/internazionalizzazione/mappamondo.png");
+      	width: 540px;
+      	margin-left:-80px;
+      	z-index: 1;
+      	visibility:visible !important;
+      }
+      #internazionalizzazione #percorso_uno{
+      	background-image: url("../img/internazionalizzazione/path_01.png");
+      	width: 270px;
+      	margin-left:26px;
+      	background-position: center 4px;
+      	z-index: 1;
+      }
+      #internazionalizzazione #percorso_due{
+      	background-image: url("../img/internazionalizzazione/path_02.png");
+      	width: 194px;
+      	margin-left:104px;
+      	background-position: center 37px;
+      	z-index: 1;
+      }
+      #internazionalizzazione #percorso_tre{
+      	background-image: url("../img/internazionalizzazione/path_03.png");
+      	width: 150px;
+      	margin-left:293px;
+      	background-position: center 110px;
+      	z-index: 1;
+      }
+      #internazionalizzazione #percorso_quattro{
+      	background-image: url("../img/internazionalizzazione/path_04.png");
+      	width: 238px;
+      	margin-left:131px;
+      	background-position: center 180px;
+      	z-index: 1;
+      }
+      #internazionalizzazione #percorso_cinque{
+      	background-image: url("../img/internazionalizzazione/path_05.png");
+      	width: 214px;
+      	margin-left:118px;
+      	background-position: center 364px;
+      	z-index: 1;
+      }
+      #internazionalizzazione #percorso_sei{
+      	background-image: url("../img/internazionalizzazione/path_06.png");
+      	width: 94px;
+      	margin-left:36px;
+      	background-position: center 262px;
+      	z-index: 1;
+      }
+      #internazionalizzazione .puntina#puntina_tre{
+      	background-image: url("../img/internazionalizzazione/puntina_01.png");
+      	width: 46px;
+      	height: 88px;
+      	margin-left:294px;
+      	margin-top: -320px;
+      	z-index: 2;
+      }
+      #internazionalizzazione .puntina#puntina_quattro{
+      	background-image: url("../img/internazionalizzazione/puntina_02.png");
+      	width: 54px;
+      	height: 74px;
+      	margin-left:322px;
+      	margin-top: 10px;
+      	z-index: 2;
+      }
+      #internazionalizzazione .puntina#puntina_cinque{
+      	background-image: url("../img/internazionalizzazione/puntina_03.png");
+      	width: 28px;
+      	height: 82px;
+      	margin-left:106px;
+      	margin-top: 78px;
+      	z-index: 2;
+      }
+      #internazionalizzazione .puntina#puntina_sei{
+      	background-image: url("../img/internazionalizzazione/puntina_04.png");
+      	width: 60px;
+      	height: 70px;
+      	margin-left:72px;
+      	margin-top: -154px;
+      	z-index: 2;
+      }
+      #internazionalizzazione #bussola{
+      	background-image: url("../img/internazionalizzazione/bussola.png");
+      	width: 178px;
+      	height: 170px;
+      	margin-left:400px;
+      	z-index: 1;
+      	margin-top: 50px;
+      }
+      #internazionalizzazione #puntatore{
+      	background-image: url("../img/internazionalizzazione/puntatore.png");
+      	width: 178px;
+      	height: 170px;
+      	margin-left:400px;
+      	z-index: 1;
+      	margin-top: 50px;
+		background-position: 59% 50%;
+		background-size: auto;
+      }
+      #internazionalizzazione #occhiali{
+      	background-image: url("../img/internazionalizzazione/occhiali.png");
+      	width: 204px;
+      	margin-left:340px;
+      	z-index: 1;
+      	visibility:visible !important;
+      } 
+      /*Fine Internazionalizzazione*/
+      
+      /*First Fridays*/
+      section#first_fridays{
+      	background-color: #3399CC;
+      	background-image: url("../img/first_friday/fondo.png");
+      	background-repeat: no-repeat;
+      	background-position: center center;
+      }
+      #first_fridays .item{
+      	height: 750px;
+      	margin-top: -375px;
+      }
+      #first_fridays #francesca{
+      	background-image: url("../img/first_friday/francesca.png");
+      	width: 360px;
+      	margin-left:360px;
+      	z-index: 1;
+      }
+      #first_fridays #tipa{
+      	background-image: url("../img/first_friday/tipa.png");
+      	width: 300px;
+      	margin-left:-750px;
+      	z-index: 1;
+      }
+      #first_fridays #tipo{
+      	background-image: url("../img/first_friday/tipo.png");
+      	width: 420px;
+      	margin-left:-570px;
+      	z-index: 1;
+      }
+      #first_fridays #domanda_tipa{
+      	background-image: url("../img/first_friday/domanda_tipa.png");
+      	width: 200px;
+      	height: 200px;
+      	margin-left:-540px;
+      	margin-top: -300px;
+      	z-index: 2;
+      }
+      #first_fridays #domanda_tipo{
+      	background-image: url("../img/first_friday/domanda_tipo.png");
+      	width: 200px;
+      	height: 200px;
+      	margin-left:-280px;
+      	margin-top: 0px;
+      	z-index: 2;
+      }
+      #first_fridays .item.risposta{
+      	background-image: url("../img/first_friday/risposta_01.png");
+      	width: 290px;
+      	height: 260px;
+      	margin-left:-238px;
+      	margin-top: -240px;
+      	z-index: 2;
+      } 
+      #first_fridays #risposta_due{
+      	background-image: url("../img/first_friday/risposta_02.png");
+      	margin-left:24px;
+      	margin-top: -410px;
+      }
+      #first_fridays #risposta_tre{
+      	background-image: url("../img/first_friday/risposta_03.png");
+      	margin-left:64px;
+      	margin-top: -160px;
+      }   
+      #first_fridays #frecce{
+      	background-image: url("../img/first_friday/frecce.png");
+      	width: 344px;
+      	margin-left:-64px;
+      	background-position: center 74px;
+      	z-index: 3;
+      }      
+      /*Fine First Fridays*/
+      
+      /*End*/
+      section#end{
+      	background-color: #FF872D;
+      }
+      
+      #end .item{
+      	visibility: visible;
+      	width: 290px;
+      	height: 290px;
+      }
+      
+      
+      #end .item.badge{
+      	background: #05558C;
+      	width: 280px;
+      	height: 280px;
+      	border-radius: 100%;
+      	-moz-box-shadow:    inset 10px 0 0px #054A70;
+      	-webkit-box-shadow: inset 10px 0 0px #054A70;
+      	 box-shadow:         inset 10px 0 0px #054A70;
+      } 
+      
+      
+      #end .item.badge#misura,  #end .item.misura{
+      margin-left:20px;
+      margin-top: -145px;
+      }     
+      
+      #end .misura#righello_1{
+      	background-image: url("../img/end/misura_righello_1.png");
+      	
+      }
+      
+      #end .misura#banner{
+      	background-image: url("../img/end/misura_banner.png");
+      	margin-left: 15px;
+      }
+      
+      #end .item.misura#mano{
+      	background-image: url("../img/end/misura_mano.png");
+      	width: 280px;
+      	height: 280px;
+      	border-radius: 100%;
+      	background-position: center 0px;
+      	background-size: auto;
+      }
+      
+      #end .misura#chart{
+      	background-image: url("../img/end/misura_chart.png");
+      }
+      
+      #end .misura#righello_2{
+      	background-image: url("../img/end/misura_righello_2.png");
+      }
+      
+      
+      #end .item.badge#competenze,  #end .item.competenze{
+      margin-left:-305px;
+       margin-top: -145px;
+      }
+      
+      #end .competenze#banner{
+      	background-image: url("../img/end/competenze_banner.png");
+      	margin-left:-310px;
+      }
+      
+      #end .competenze#lampadina_1{
+      	background-image: url("../img/end/competenze_lampadina_1.png");
+      }
+      
+      #end .competenze#lampadina_2{
+      	background-image: url("../img/end/competenze_lampadina_2.png");
+      	visibility: hidden;
+      }
+      
+      #end .competenze.bagliore{
+      	width: 190px;
+      	height: 190px;
+      	background: #FFFF2E;
+      	border-radius: 100%;
+      	margin-left: -249px;
+      	margin-top: -120px;
+      	opacity: 0;
+      }
+      
+      #end .competenze.bagliore#bagliore_1{
+      	width: 150px;
+      	height: 150px;
+      	border-radius: 100%;
+      	margin-left: -229px;
+      	margin-top: -99px;
+      }
+      #end .competenze.bagliore#bagliore_2{
+      	width: 170px;
+      	height: 170px;
+      	border-radius: 100%;
+      	margin-left: -240px;
+      	margin-top: -110px;
+      }
+      
+      #end .item.badge#inter,  #end .item.inter{
+      margin-left:-630px;
+      margin-top: -145px;
+      }
+      
+      #end .inter#mappamondo{
+      	background-image: url("../img/end/inter_mappamondo_bkg.png");
+      	background-repeat: repeat;
+      	width: 121px;
+      	height: 121px;
+      	border-radius:100%;
+      	transform:  rotate(-23deg);
+      	-webkit-transform:  rotate(-23deg);
+      	margin-left: -541px;
+      	margin-top: -72px;
+      }
+      
+      #end .inter#asse{
+      	background-image: url("../img/end/inter_asse.png");
+      }
+      
+      #end .inter#banner{
+      	background-image: url("../img/end/inter_banner.png");
+      	margin-left:-635px;
+      }
+      
+      #end .item.badge#ifc{
+      margin-left:345px;
+      margin-top: -145px;
+      background: #3399CC;
+      -moz-box-shadow:    inset 10px 0 0px #2F8DB2;
+      -webkit-box-shadow: inset 10px 0 0px #2F8DB2;
+       box-shadow:         inset 10px 0 0px #2F8DB2;
+       /* background-image: url("../img/end/inter_ifc.png"); */
+       background-image: url("../img/logo-black-square_blu.png");
+       background-repeat: no-repeat;
+       background-size: 200px;
+	   background-position: 45px 40px;
+      }
+      
+      
+      
+      /*Fine End*/
+      
+      
+      /*Fine First Fridays*/
+
+
+
+
+/*media queries panels*/
+      @media screen and (max-width: 1000px) {
+        .panels,
+        .log,
+        .menu {
+          top: 300px;
+        }
+      }

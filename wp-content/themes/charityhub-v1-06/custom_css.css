@@ -18,7 +18,7 @@ blockquote{
     top: 30px;
     background: url('/wp-content/themes/charityhub-v1-06/images/baloon-pointer.png');
 }
-	
+
 
 .gdlr-navigation-substitute {
     position: relative;
@@ -56,6 +56,10 @@ div.column-service-content-wrapper > div > p > a {
     pointer-events: none;
 }
 
+body > div.body-wrapper.float-menu > header > div.gdlr-header-substitute > div > div > div.gdlr-logo-right-text.gdlr-align-left {
+	pointer-events: all !important;
+}
+
 .gdlr-page-title-wrapper {
     background-color: #9DC6CD;
 }
@@ -74,4 +78,48 @@ div.column-service-content-wrapper > div > p > a {
 
 #ifcerviziomentro, #ifcpersonaleintro , #ifcclientiintro {
 	font-size: 1.3em;
+}
+
+#content-section-2 > div > div.three.columns > div > div > div > div.gdlr-styled-box-caption {
+	font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+#content-section-2 > div > div.three.columns > div > div > div > h3 {
+font-size: 18px !important;
+}
+
+.gdlr-personnel-item .personnel-author-image {
+    text-align: center;
+}
+
+.gdlr-personnel-item.plain-style .personnel-content {
+    text-align: justify;
+    margin: 20px 10px;
+}
+
+.gdlr-page-mobile-background {
+	display: none;
+}
+
+@media (min-width: 0px) and (max-width: 959px) {
+	.gdlr-header-inner {
+	    pointer-events: all;
+	}
+
+	.gdlr-header-style-2.gdlr-centered .gdlr-logo.gdlr-align-left {
+	    top: 0;
+	    left: 0;
+	}
+}
+
+@media (min-width: 0px) and (max-width: 1060px) {
+	.gdlr-page-title-wrapper {
+		background-image: none !important;
+		background-color: #9DC6CD !important;
+	}
+	.gdlr-page-mobile-background {
+		display: block;
+	}
 }

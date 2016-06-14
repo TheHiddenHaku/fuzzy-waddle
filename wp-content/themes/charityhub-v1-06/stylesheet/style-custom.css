@@ -252,7 +252,7 @@ html .woocommerce .quantity .minus, html .woocommerce #content .quantity .minus,
 .gdlr-skin-urgent-cause *, .gdlr-skin-urgent-cause .gdlr-skin-border{ border-color: #ffffff; }
 .gdlr-skin-urgent-cause .gdlr-button, .gdlr-skin-urgent-cause .gdlr-button:hover, .gdlr-skin-urgent-cause input[type="button"], .gdlr-skin-urgent-cause input[type="submit"]{ color: #ffffff; background-color: #62cdff;  }@font-face {
 font-family: "LexiaDaMa";
-src: url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.eot");
-src: url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.eot?#iefix") format("embedded-opentype"), 
-url("http://ifcitaly.dev/wp-content/uploads/2015/11/lexiadama-webfont.ttf") format("truetype");
+src: url("/wp-content/uploads/2015/11/lexiadama-webfont.eot");
+src: url("/wp-content/uploads/2015/11/lexiadama-webfont.eot?#iefix") format("embedded-opentype"), 
+url("/wp-content/uploads/2015/11/lexiadama-webfont.ttf") format("truetype");
 }
